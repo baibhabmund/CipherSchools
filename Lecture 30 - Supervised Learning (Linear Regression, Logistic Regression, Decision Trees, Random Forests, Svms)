@@ -116,6 +116,39 @@ iris = load iris()
 X= iris.data 
 y = iris.target
 #Splitting data into training and testing sets
-X_train, X_test, y train, y_test train_test_split(X, y, test size=0.2, random_state=42)
+X_train, X_test, y train, y_test = train_test_split(X, y, test size=0.2, random_state=42)
+#Training the model 
+model = DecisionTreeClassifier() 
+model.fit(X_train, y_train)
+#Making predictions
+y_pred = model.predict(X_test)
+#Evaluating the model \
+accuracy = accuracy_score(y_test, y_pred) 
+print(f'Accuracy: {accuracy}')
 
-#Training the model model DecisionTreeClassifier() model.fit(X_train, y_train)
+Support Vector Machines (SVMs):
+1 - Maximize Margin: SVM identifies the optimal hyperplane that maximizes the distance between data points of different classes.
+2 - Kernel Trick: By using kernel functions, SVMs can efficiently handle non-linear problems in high dimensional spaces.
+3 - Robust to Outliers: SVMs are less sensitive to outliers compared to other classification algorithms.
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split 
+from sklearn.svm import SVC 
+from sklearn.metrics import accuracy_score
+# Loading the Iris dataset
+iris load_iris()
+X = iris.data 
+y = iris.target
+# Using only two classes for binary classification
+X = X[y != 2]
+y = y[y != 2]
+#Splitting data into training and testing sets
+X_train, X_test, y_train, y test train_test = split(x, y, test size=0.2, random state=42)
+# Training the model 
+model = SVC() 
+model.fit(X_train, y_train)
+# Making predictions 
+y_pred = model.predict(X_test)
+# Evaluating the model 
+accuracy = accuracy_score(y_test, y_pred) 
+print(f'Accuracy: {accuracy}')
