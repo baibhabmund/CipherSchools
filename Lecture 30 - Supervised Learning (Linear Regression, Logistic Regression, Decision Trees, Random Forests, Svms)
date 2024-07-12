@@ -1,0 +1,19 @@
+Introduction to Supervised Learning:
+Supervised learning is a fundamental machine learning technique where an algorithm is trained on labeled data to make predictions on new, unseen data. This powerful approach has numerous applications, 
+from spam filtering to medical diagnosis.
+
+• Overfitting (High variance): In this, the model focuses too much on specific patterns in the training dataset and does not generalize well on unseen data. Overfitting can happen when models are too complex.
+- Reasons for Overfitting:
+  1. Too complex model.
+  2. Too much training.
+  3. Limited training data.
+
+• Underfitting (High bias): A high level of bias can lead to underfitting, which occurs when the algorithm is unable to capture relevant relations between features and target outputs. A high bias model typically 
+  includes more assumptions about the target function or end result.
+- Reasons for Underfitting:
+  1. Too simple model.
+  2. Insufficient training.
+  3. Poor feature selection.
+
+• Good balance (Optimal/Low bias/low variance):  A model that has low bias and low variance means that the model is able to capture the underlying patterns in the data (low bias) and is not too sensitive to changes in 
+  the training data (low variance).
